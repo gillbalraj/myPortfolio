@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SkillsComponent } from './my-skills/skills.component';
 import { MyProjectsComponent } from './my-projects/my-projects.component';
+import { RoutingModule } from './routing.module';
 
 
 @NgModule({
@@ -16,7 +17,9 @@ import { MyProjectsComponent } from './my-projects/my-projects.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
