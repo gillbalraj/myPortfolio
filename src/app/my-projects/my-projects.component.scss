@@ -1,0 +1,10 @@
+#header {
+  padding: 6px 0px 0px 0px;
+  width: 100px;
+}
+#header.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
