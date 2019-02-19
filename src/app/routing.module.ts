@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MyProjectsComponent } from './my-projects/my-projects.component'
+import { MyProjectsComponent } from './my-projects/my-projects.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
-	{path: 'projects', component: MyProjectsComponent}
+	{path: '', redirectTo: '/dashboard' , pathMatch: 'full'},
+	{path: 'projects', component: MyProjectsComponent},
+	{path: 'dashboard', component: DashboardComponent}
+
 ]
 
 @NgModule({

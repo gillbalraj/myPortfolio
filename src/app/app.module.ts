@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SkillsComponent } from './my-skills/skills.component';
 import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { RoutingModule } from './routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { RoutingModule } from './routing.module';
     AppComponent,
     SkillsComponent,
     MyProjectsComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
