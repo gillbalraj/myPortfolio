@@ -7,7 +7,8 @@ import { SkillsComponent } from './my-skills/skills.component';
 import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { RoutingModule } from './routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MyTechListComponent } from './my-tech-list/my-tech-list.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +16,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SkillsComponent,
     MyProjectsComponent,
     DashboardComponent,
+    MyTechListComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     RoutingModule,
+    NoopAnimationsModule
 
   ],
   providers: [],
