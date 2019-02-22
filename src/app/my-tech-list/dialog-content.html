@@ -1,0 +1,11 @@
+
+
+<h1 mat-dialog-title>My Skills</h1>
+<div mat-dialog-content>
+  I have Expertise in:
+  <ul>
+    <li *ngFor="let skill of skills">
+      <span class="badge">{{skill.id}}</span> {{skill.name}}
+    </li>
+  </ul>
+</div>

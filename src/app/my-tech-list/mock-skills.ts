@@ -1,4 +1,4 @@
-import { Skill } from './skill';
+import { Skill } from './my-tech-list.component';
 
 export const SKILLS: Skill[] = [
 	  { id: 1, name: 'JavaScript'},
