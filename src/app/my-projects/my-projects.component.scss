@@ -8,6 +8,12 @@
   left: 0;
   z-index: 1000;
 }
+img.portfolio {
+  max-width: 200px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
 #footer__bottom {
 	display: inline-block;
 	width: 100%;
