@@ -4,10 +4,9 @@ import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
-	{path: '', redirectTo: '/dashboard' , pathMatch: 'full'},
 	{path: 'projects', component: MyProjectsComponent},
-	{path: 'dashboard', component: DashboardComponent}
-
+	{path: 'dashboard', component: DashboardComponent},
+	{path: '', redirectTo: '/dashboard' , pathMatch: 'full'}
 ]
 
 @NgModule({
@@ -16,3 +15,4 @@ const routes: Routes = [
 })
 
 export class RoutingModule { }
+	

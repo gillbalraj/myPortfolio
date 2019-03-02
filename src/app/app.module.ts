@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
-import { AppRoutingModule } from './app-routing.module';
+// import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { SkillsComponent } from './my-skills/skills.component';
 import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { RoutingModule } from './routing.module';
@@ -24,14 +25,14 @@ import { MyTechListComponent, DialogComponent } from './my-tech-list/my-tech-lis
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule,
+    // AppRoutingModule,
     RoutingModule,
     NoopAnimationsModule,
     MaterialModule
 
   ],
   entryComponents: [MyTechListComponent, DialogComponent],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
