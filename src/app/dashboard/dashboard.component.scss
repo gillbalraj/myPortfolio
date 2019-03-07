@@ -26,7 +26,7 @@ body, input[type="text"], button {
 }
 /* everywhere else */
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "proxima-nova", sans-serif;
 }
 #header {
   padding: 6px 0px 0px 0px;
@@ -39,7 +39,7 @@ body, input[type="text"], button {
 //   z-index: 1000;
 // }
 .row {
-  max-width: 170rem;
+  max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -88,15 +88,15 @@ h2 {
   }
 
 
-h1, h2, h3, h4, h5, h6, p, li, a, span {
-    font-family: "proxima-nova", "sans-serif";
+h1, h2, h3, h4, h5, h6, p, li, a {
+    font-family: "proxima-nova", sans-serif;
   }
 p {
   line-height: 1.25;
   font-size: 1rem;
   margin-bottom: 1rem!important;
   margin: auto;
-  font-family: "proxima-nova", "sans-serif";
+  font-family: "proxima-nova", sans-serif;
 }
 .s-btn{
   margin-bottom: 10px!important;
